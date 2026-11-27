@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ulli Eckhard — eckhard.de</title>
+  <meta name="description" content="Persönliche Website von Ulli Eckhard — Über mich, Interessen und Kontakt.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Hauptnavigation">
+      <a href="#start" class="brand">eckhard<span>.de</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="sr-only">Menü öffnen</span>
+      </button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#start">Start</a></li>
+        <li><a href="#ueber-mich">Über mich</a></li>
+        <li><a href="#interessen">Interessen</a></li>
+        <li><a href="#kontakt" class="nav-cta">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="start" class="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Herzlich willkommen</p>
+        <h1>Hi, ich bin <span class="accent">Ulli Eckhard</span>.</h1>
+        <p class="hero-text">
+          Das ist meine persönliche Ecke im Netz — ein Ort für das, was mich
+          beschäftigt, interessiert und antreibt.
+        </p>
+        <div class="hero-actions">
+          <a href="#ueber-mich" class="btn btn-primary">Mehr über mich</a>
+          <a href="#kontakt" class="btn btn-ghost">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber-mich" class="section">
+      <div class="container">
+        <h2 class="section-title">Über mich</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Ich bin Ulli Eckhard. Diese Seite ist mein kleines Zuhause im
+              Internet — schlicht, schnell und ohne Schnickschnack.
+            </p>
+            <p>
+              Hier sammle ich Gedanken, Projekte und Dinge, die mich begeistern.
+              Schau dich ruhig um — und wenn du magst, schreib mir einfach.
+            </p>
+          </div>
+          <ul class="fact-list">
+            <li><span class="fact-label">Name</span><span>Ulli Eckhard</span></li>
+            <li><span class="fact-label">Website</span><span>eckhard.de</span></li>
+            <li><span class="fact-label">Standort</span><span>Deutschland</span></li>
+            <li><span class="fact-label">Status</span><span>Offen für nette Nachrichten</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="interessen" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Interessen</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💻</div>
+            <h3>Technik &amp; Web</h3>
+            <p>Vom ersten HTML-Tag bis zur eigenen Domain — das Web fasziniert mich jeden Tag aufs Neue.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📚</div>
+            <h3>Lernen</h3>
+            <p>Neugier treibt mich an: Lesen, Ausprobieren und Weitergeben stehen bei mir hoch im Kurs.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🚶</div>
+            <h3>Natur &amp; Bewegung</h3>
+            <p>Spaziergänge, frische Luft und ein klarer Kopf — die besten Ideen kommen beim Gehen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="contact-text">
+          Du möchtest Hallo sagen, feedback geben oder einfach plaudern?
+          Schreib mir eine Mail — ich freue mich über jede Nachricht.
+        </p>
+        <a class="btn btn-primary btn-lg" href="mailto:hallo@eckhard.de">hallo@eckhard.de</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Ulli Eckhard · eckhard.de</p>
+      <p class="footer-meta">Gebaut mit Sorgfalt — ohne Framework, ohne Tracking.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
